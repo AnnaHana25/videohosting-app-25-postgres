@@ -6,8 +6,10 @@ import java.time.LocalTime;
 public class ViewInfoDTO {
     private String viewerFirstName;
     private String viewerLastName;
+    private String viewerFatherly;
     private String producerFirstName;
     private String producerLastName;
+    private String producerFatherly;
     private String videoTitle;
     private String videoGenre;
     private String producerCountry;
@@ -17,13 +19,15 @@ public class ViewInfoDTO {
     private LocalTime viewTime;
 
     // Constructor
-    public ViewInfoDTO(String viewerFirstName, String viewerLastName, String producerFirstName, String producerLastName,
+    public ViewInfoDTO(String viewerFirstName, String viewerLastName, String viewerFatherly, String producerFirstName, String producerLastName, String producerFatherly,
                     String videoTitle, String videoGenre, String producerCountry, String platformName,
                     double videoRating, LocalDate viewDate, LocalTime viewTime) {
         this.viewerFirstName = viewerFirstName;
         this.viewerLastName = viewerLastName;
+        this.viewerFatherly = viewerFatherly;
         this.producerFirstName = producerFirstName;
         this.producerLastName = producerLastName;
+        this.producerFatherly = producerFatherly;
         this.videoTitle = videoTitle;
         this.videoGenre = videoGenre;
         this.producerCountry = producerCountry;
@@ -46,6 +50,10 @@ public class ViewInfoDTO {
         return viewerLastName;
     }
 
+        public String getViewerFatherly() {
+        return viewerFatherly;
+    }
+
     public void setViewerLastName(String viewerLastName) {
         this.viewerLastName = viewerLastName;
     }
@@ -53,6 +61,10 @@ public class ViewInfoDTO {
     public String getProducerFirstName() {
         return producerFirstName;
     }
+
+public String getProducerFatherly() {
+    return producerFatherly;
+}
 
     public void setProducerFirstName(String producerFirstName) {
         this.producerFirstName = producerFirstName;

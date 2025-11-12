@@ -371,8 +371,8 @@ public class MainApp {
             session.beginTransaction();
 
             String hql = "SELECT new com.college.ViewInfoDTO(" +
-                    "vn.firstName, vn.lastName, " +
-                    "pn.firstName, pn.lastName, " +
+                    "vn.firstName, vn.lastName, vn.fatherly, " +
+                    "pn.firstName, pn.lastName, pn.fatherly, " +
                     "v.title, v.genre, p.country, " +
                     "v.platform.name, v.rating, " +
                     "ve.viewDate, ve.viewTime) " +
@@ -390,8 +390,8 @@ public class MainApp {
 
            // Обробка результатів
 for (ViewInfoDTO info : results) {
-    System.out.println("Глядач: " + info.getViewerFirstName() + " " + info.getViewerLastName());
-    System.out.println("Продюсер: " + info.getProducerFirstName() + " " + info.getProducerLastName());
+    System.out.println("Глядач: " + info.getViewerFirstName() + " " + info.getViewerLastName() + " " + info.getViewerFatherly());
+    System.out.println("Продюсер: " + info.getProducerFirstName() + " " + info.getProducerLastName() + " " + info.getProducerFatherly());
     System.out.println("Відео: " + info.getVideoTitle());
     System.out.println("Жанр: " + info.getVideoGenre());
     System.out.println("Країна продюсера: " + info.getProducerCountry());
