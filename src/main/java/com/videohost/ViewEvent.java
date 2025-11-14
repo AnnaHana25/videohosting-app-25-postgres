@@ -1,4 +1,4 @@
-package com.college;
+package com.videohost;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

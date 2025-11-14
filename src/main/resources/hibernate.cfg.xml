@@ -29,12 +29,12 @@
         <property name="hibernate.current_session_context_class">thread</property>
 
         <!-- List of annotated entity classes -->
-        <mapping class="com.college.Platform"/>
-        <mapping class="com.college.ProducerName"/>
-        <mapping class="com.college.Producer"/>
-        <mapping class="com.college.ViewerName"/>
-        <mapping class="com.college.Viewer"/>
-        <mapping class="com.college.Video"/>
-        <mapping class="com.college.ViewEvent"/>
+        <mapping class="com.videohost.Platform"/>
+        <mapping class="com.videohost.ProducerName"/>
+        <mapping class="com.videohost.Producer"/>
+        <mapping class="com.videohost.ViewerName"/>
+        <mapping class="com.videohost.Viewer"/>
+        <mapping class="com.videohost.Video"/>
+        <mapping class="com.videohost.ViewEvent"/>
     </session-factory>
 </hibernate-configuration>

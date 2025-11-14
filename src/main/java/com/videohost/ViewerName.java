@@ -1,4 +1,4 @@
-package com.college;
+package com.videohost;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

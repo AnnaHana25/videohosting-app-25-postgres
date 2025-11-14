@@ -1,4 +1,4 @@
-package com.college;
+package com.videohost;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -370,7 +370,7 @@ public class MainApp {
         try (Session session = factory.openSession()) {
             session.beginTransaction();
 
-            String hql = "SELECT new com.college.ViewInfoDTO(" +
+            String hql = "SELECT new com.videohost.ViewInfoDTO(" +
                     "vn.firstName, vn.lastName, vn.fatherly, " +
                     "pn.firstName, pn.lastName, pn.fatherly, " +
                     "v.title, v.genre, p.country, " +
